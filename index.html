@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Newsletter Sign-Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link REL="stylesheet" TYPE="text/css" HREF="style.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td style="font-family: helvetica; color: darkslategrey">
+                    <a href="https://www.recoveryworldwide.com/">
+                        <img class="logo" src="logo.svg" alt="Recovery Worldwide Logo" style="width:50%">
+                    </a>
+                    <h1>Newsletter Sign-Up</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="form">
+                        <p style="text-align: center">
+                            <strong>Just fill out your information below to begin receiving our newsletter</strong>
+                        </p>
+                        <p id="error"></p>
+                        <form onsubmit="return validate();">
+                            First Name:
+                            <input type="text" id="fname" required>
+                            Last Name:
+                            <input type="text" id="lname" required>
+                            Email:
+                            <input type="text" id="email" required>
+                            <p style="text-align: center">
+                                <input type="submit" name="submitButton">
+                            </p>
+                        </form>
+                    </div>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: bottom; padding-bottom: 1em">
+                    <div id="footer">
+                        <a href="https://www.recoveryworldwide.com/about/">About</a>
+                        <a href="https://www.recoveryworldwide.com/careers/">Careers</a>
+                        <a href="https://www.recoveryworldwide.com/properties/">Properties</a>
+                        <a href="https://www.recoveryworldwide.com/advertise/">Advertise</a>
+                        <a href="https://www.recoveryworldwide.com/contact/">Contact</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <script src="validate.js"></script>
+    </body>
+</html>
